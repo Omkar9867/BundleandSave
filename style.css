@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 41vw;
+    width: 27vw;
 }
 
 h2 {
@@ -25,16 +25,16 @@ h2::after {
     content: '';
     position: absolute;
     top: 50%;
-    width: 10vw;
+    width: 7vw;
     border-top: 2px solid #000;
 }
 
 h2::before {
-    left: 382px;
+    left: 310px;
 }
 
 h2::after {
-    right: 382px;
+    right: 310px;
 }
 
 
@@ -54,6 +54,7 @@ h2::after {
     transition: height 0.5s ease; 
     height: 80px;
 }
+
 
 .content {
     visibility: hidden;
@@ -94,19 +95,27 @@ p {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding: 0px 14px 0px 14px;
 }
 
 button {
+    background-color:  rgb(17, 91, 81);
+    color: #fff;
+    border: none;
+}
+
+.button-container {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color:  rgb(17, 91, 81);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 22vw;
 }
 
-button:hover {
-    background-color: #0056b3;
+.button-container:hover {
+    background-color:  rgb(0, 74, 64);
 }
 
 span {
@@ -115,13 +124,41 @@ span {
 
 /* Toggle css */
 .main.active {
-    height: 250px; 
+    height: 200px; 
+    border: 2px solid rgb(7, 76, 67) ;
+    background-color: rgba(100, 215, 175, 0.148)
 }
 
-.main.active .align-inside {
-    display: block;
-}
 
 .main.active .content {
     visibility: visible;
+}
+
+select {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Make select element full width */
+    margin-bottom: 10px; /* Add spacing between select elements */
+}
+
+.mytable{
+    margin-right: 183px;
+}
+
+th{
+    font-size: 12px;
+}
+
+.cut-through {
+    text-decoration: line-through;
+}
+
+.green-text {
+    color: green;
+}
+
+.green-text .bold {
+    color: black;
 }
