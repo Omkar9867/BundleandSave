@@ -7,7 +7,7 @@ const handleBoxClick = (event) => {
     const radioButton = clickedBox.querySelector('input[type="radio"]');
     if (!radioButton.checked) {
         radioButton.checked = true;
-        const selectedAmt = clickedBox.querySelector('.align-inside strong').innerText;
+        const selectedAmt = clickedBox.querySelector('.my-align strong').innerText;
         updateTotalAmount(selectedAmt);
     }
     const boxes = document.querySelectorAll('.main');
@@ -21,7 +21,6 @@ const handleBoxClick = (event) => {
 const updateTotalAmount = (selectedAmt) => {
     totalAmount.innerText = selectedAmt;
 };
-
 
 // Event listener for box click
 document.querySelectorAll('.main').forEach(box => {
